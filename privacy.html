@@ -1,208 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>
+            Empowering Bharat | MoneyRise
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+        <style>
+            
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            }
 
-  <title>Terms & Conditions - Moneyrise</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+            .flex-item {
+            min-width: 50%;
+            min-height: 50%;
+            }
+        </style>
+    </head>
+    <body>
 
-  <!-- Favicons -->
-  <link href="assets/img/logo.webp" rel="icon">
-  <link href="assets/img/logo.webp" rel="apple-touch-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+        <symbol id="collection" viewBox="0 0 16 16">
+          <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+        </symbol>
+        <symbol id="calendar3" viewBox="0 0 16 16">
+          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </symbol>
+        <symbol id="chat-quote-fill" viewBox="0 0 16 16">
+          <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+        </symbol>
+        <symbol id="cpu-fill" viewBox="0 0 16 16">
+          <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+          <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+        </symbol>
+        <symbol id="gear-fill" viewBox="0 0 16 16">
+          <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+        </symbol>
+        <symbol id="speedometer" viewBox="0 0 16 16">
+          <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+        </symbol>
+        <symbol id="toggles2" viewBox="0 0 16 16">
+          <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+          <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+          <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+        </symbol>
+        <symbol id="tools" viewBox="0 0 16 16">
+          <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+        </symbol>
+        <symbol id="chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </symbol>
+        <symbol id="geo-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+        </symbol>
+      </svg>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Appland - v4.9.1
-  * Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html" style="text-decoration: none;"><img src="assets/img/logo.webp" alt="" class="img-fluid"/> Moneyrise</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#features">App Features</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#faq">F.A.Q</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                    <h1>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.webp" alt="" class="img-fluid">
+                            <span style="font-family:roboto-bold,roboto,sans-serif; font-size:22px; color:green" >MONEYRISE </span>
+                        </a>
+                    </h1>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#features">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+                
+                    <form action="index.html">
+                      <button class="btn btn-outline-success" type="submit" >Home</button>
+                    </form>
+                    <form action="about.html" style="margin-left: 1%;">
+                      <button class="btn btn-success" type="submit">About</button>
+                    </form>
 
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs Section -->
-
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Appland</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+         
+              </div>
             </div>
-          </div>
+          </nav>
+
+        <div class="container-fluid">
+
+             <div class="row" style="margin-top: 2em; padding-left: 2em;">
+                  <h1 class="pb-2 text-center" >Privacy Policy</h1>
+                  <br/><br/><br/>
+  
+                    
+                    <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                            <p style="justify-content: space-evenly;">
+                              <p>
+                                Privacy Policy</p>
+                                
+                                <p>This privacy policy (&quot;privacy policy&quot;) sets forth the modes of collection, use and disclosure of your information gathered on the platform. This privacy policy applies only to personal information collected on the platform. This privacy policy does not apply to information collected by the company in other ways, including information collected offline. Please read this privacy policy carefully. By continuing to use the services, or access the platform you agree to this privacy policy. If you do not agree to this privacy policy, you may not avail the services.<br />
+                                Access to the Platform is subject to the Terms and Conditions (Terms) accessible on the Platform, capitalized terms used and not defined in this Privacy Policy, shall have the same meaning ascribed to them in the Terms.</p>
+                                
+                                <p>INTRODUCTION</p>
+                                
+                                <p>We, Firstrise Services Private Limited (Company; We; us; our) have developed a mobile application called Moneyrise (Application/ App) through which you may apply for a short term loan (Loan) to be granted by various non-banking financial company OR Banks (Lender), based on the loan agreement executed between you and LENDER. LENDER has appointed and authorized us to collect, store, authenticate, verify and distribute the Personal Information (defined below) as may be required by LENDER to sanction the Loan. The Personal Information shall be collected through the mobile application form (Mobile Application Form) available on the Application.<br />
+                                We are committed to protect your privacy and have made this Privacy Policy to describe the procedures we adhere to for collecting, using, and disclosing the Personal Information. We recommend you to read this Privacy Policy carefully so that you understand our approach towards the use of your Personal Information.</p>
+                                
+                                <p>PERSONAL INFORMATION COLLECTED</p>
+                                
+                                <p>In order to avail the Services, you are required to register with the Company by logging in to your user account. For the purpose of this Policy, Services shall mean the services of granting, sanctioning, facilitating of loans, through the platform by LENDER. During the application process, you shall be required to share/upload certain personal information, your name, e-mail address, gender, date of birth, mobile number, passwords, photograph, mobile phone information, SMS and browsing history, data and login-in credentials of Third Party Platforms (defined below), financial information such as bank documents, salary slips, bank statements, PAN card, bank account no., data from Credit Information Companies, data required for Know Your Customer compliances, requirement and other relevant details (Personal Information). You undertake that you shall be solely responsible for the accuracy and truthfulness of the Personal Information you share with us.<br />
+                                The Company shall seek an explicit written one-time permission for collecting the above data, which shall be used for the purpose of on-boarding/ KYC requirements only.<br />
+                                As part of the Services, you authorize us to import your details and Personal Information dispersed over Third Party Platforms. Third Party Platforms are social networking platforms, such as Facebook, LinkedIn and other similar platforms.<br />
+                                You understand and acknowledge that deletion, uninstallation, and/or discontinuation of our Services, shall not release you from the responsibility, obligation and liability to repay the Outstanding Amount(s) due to the Lender as per the documents accepted/executed between you and the Lending Partner.<br />
+                                You further understand and acknowledge that provision of the information provided herewith is voluntarily and you may choose to provide and/or withhold provision of any data. However in case of non-provision of any data you may not be eligible for certain services for which the data needs to be collected.</p>
+                                
+                                <p>PERMISSIONS ARE REQUIRED</p>
+                                
+                                <p>SMS related permissions <br />
+                                We collect, monitor and transmit your SMS data which helps us in identifying the various bank accounts that you may be holding, cash flow patterns, description and amount of the transactions. This data is used for the purpose of performing credit risk assessment. This credit risk assessment enables us to perform a quicker loan disbursal and identify any fraudulent activity and strengthen data security. This data may be collected even when the app is not in use.</p>
+                                
+                                <p>Microphone related permissions<br />
+                                Permission for microphone is required to initiate two-way audio communication as a part of KYC journey. This may be stored for future verification purpose by us, our service providers, affiliates and partners.</p>
+                                
+                                <p>Storage related permissions<br />
+                                Storage permission is required so that your KYC and other relevant documents can be securely downloaded and saved to your phone. These KYC documents can then be easily uploaded for faster completion of your loan application and disbursal. This will help us to ensure that you undergo a seamless experience on our app.</p>
+                                
+                                <p>Location related permissions <br />
+                                Location related permissions are required to assess serviceability of your loan application. This will be used in verifying the address and undertaking continuous credit risk assessment. It will expedite complete of your KYC process along with facilitating better credit access. It will also help in strengthening security against any unauthorized access to your account. This permission will also be used for providing better customer experience and providing customized offers.</p>
+                                
+                                <p>Phone related permissions<br />
+                                Phone related permissions is required of specific information that is collected and monitored by our app regarding your device including your hardware model, build model, RAM, storage, Unique device identifiers like IMEI, serial number, SSAID, SIM information that includes network operators, roaming state, MNC and MCC codes, WIFI information that includes MAC address and mobile network information so as to uniquely identify the services and to ensure that no unauthorized device acts on your behalf which will help us in preventing frauds. This will also help us in enriching your credit profile and assessing your credit worthiness</p>
+                                
+                                <p>Camera related permissions<br />
+                                Permissions to access Camera is required so that requisite KYC documents can be easily scanned or captured and thus saving time by allowing us to auto-fill relevant data so that an audio/video call can be initiated for the purpose of KYC completion. This will ensure that you are provided with a seamless experience while using our application.</p>
+                                
+                                <p>Installed Application related permissions <br />
+                                This installed Application related permission is required as we collect each installed applications metadata information which includes the application name, package name, installed time, updated time, version name and version code of each installed application on your device to assess your credit worthiness and provide you with pre-approved customized loan offers.</p>
+                                
+                                <p>User Personal Information related permissions <br />
+                                This personal information related permissions is required to collect user account data which includes email address and user public profile information like name, photo, ASID depending on the social media or networking platform used by you (such as Google, Facebook, etc.) to log-in to the app. This information is required as a part of registration process and to access our service and is also used to auto-populate relevant fields in the course of our app interface. Our app also collects mobile number for verification to check the active SIM status of the device, uniquely identify yo9u and to prevent frauds and unauthorize access.</p>
+                                
+                                <p>Please not that few data points collected here are mandatory for building comprehensive credit risk assessment and credit profile and thus shall be securely shared with our registered service providers, affiliates and partners.</p>
+                                
+                                <p>
+                                GOVERNING STATUTE<br />
+                                This Privacy Policy is governed by and is compliant with the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules 2011, which is designed to protect Personal Information of the End-User(s) of the Services; and other applicable rules and regulations related to privacy.</p>
+                                
+                                <p>COOKIES<br />
+                                We may set cookies to track your use of the Platform. Cookies are small encrypted files, that a site or its service provider transfers to your device&rsquo;s hard drive that enables the sites or service provider&rsquo;s systems to recognize your device and capture and remember certain information. By using the Application, you signify your consent to our use of cookies.</p>
+                                
+                                <p>DISCLOSURES<br />
+                                We do not sell, rent, lease your Personal Information to anybody and will never do so. Keeping this in mind, we may disclose your Personal Information in the following cases:<br />
+                                Administrators: We shall provide access to your Personal information to our authorized administrative(s) for internal business purposes, who shall be under confidentiality obligations towards the same.<br />
+                                Affiliates: We may provide Personal Information we collect to our affiliates. For example, we may disclose Personal Information to our affiliates in order to respond to your requests for information or the Services, or to help limit your receipt of marketing materials you have requested not to receive.<br />
+                                Business Partners: We may use certain trusted third party companies and individuals to help us provide, analyse, and improve the Services including but not limited to data storage, maintenance services, database management, credit bureaus, rating agencies, web analytics, payment processing, and improvement of the Platform&rsquo;s features. These third parties may have access to your information only for purposes of performing these tasks on our behalf and under obligations similar to those in this Privacy Policy. We may disclose your Personal Information to partners who perform business functions or hosting services on our behalf and who may be located outside India.<br />
+                                Service Providers: We may share your Personal Information with the service providers, including LENDER, who are working with us in connection with the operation of the Services or the Platform, so long as such service providers are subject to confidentiality restrictions consistent with this Privacy Policy.<br />
+                                Joint Marketing Arrangements: Where permitted by law, we may share your Personal Information with joint marketers with whom we have a marketing arrangement, we would require all such joint marketers to have written contracts with us that specify the appropriate use of your Personal Information, require them to safeguard your Personal Information, and prohibit them from making unauthorized or unlawful use of your Personal Information<br />
+                                Persons Who Acquire Our Assets or Business: If we sell or transfer any of our business or assets, certain Personal Information may be a part of that sale or transfer. In the event of such a sale or transfer, we will notify you.<br />
+                                Legal and Regulatory Authorities: We may be required to disclose your Personal Information due to legal or regulatory requirements. In such instances, we reserve the right to disclose your Personal Information as required in order to comply with our legal obligations, including but not limited to complying with court orders, warrants, or discovery requests. We may also disclose your Personal Information (a) to law enforcement officers or others; (b) to Credit Information Companies; (c) to comply with a judicial proceeding, court order, or legal process served on us or the Platform; (d) to enforce or apply this Privacy Policy or the Terms of Service or our other policies or Agreements; (e) for an insolvency proceeding involving all or part of the business or asset to which the information pertains; (f) respond to claims that any Personal Information violates the rights of third-parties; (g) or protect the rights, property, or personal safety of the Company, or the general public. You agree and acknowledge that we may not inform you prior to or after disclosures made according to this section.</p>
+                                
+                                <p>Notwithstanding anything mentioned hereinabove, the Company shall not be responsible for the actions or omissions of the service providers or parties with whom the Personal Information is shared, nor shall the Company be responsible and/or liable for any additional information you may choose to provide directly to any service provider or any third party.</p>
+                                
+                                <p>DATA RETENTION<br />
+                                We will retain your Personal Information for as long as your Outstanding Amount(s) is due and payable to LENDER. We may also retain and use your Personal Information as necessary to comply with our legal obligations, resolve disputes. You further understand and acknowledge that no biometric data shall be stored by us.<br />
+                                You may choose to delete and/or change/ withdraw your consent for use of your data at any point. You may reach out to us over email specifying such a change. Upon receiving such request we will delete your Personal Information subject to receiving written request for the same through your registered email-id. Please note, however, that there might be latency in deleting Personal Information from our servers and backed-up versions might exist even after deletion. Also upon withdrawal of such request you might not be further eligible for any services and it shall be at sole discretion of the Company.</p>
+                                
+                                <p>SECURITY<br />
+                                We value your Personal Information, and protect it on the Platform against loss, misuse or alteration by taking extensive security measures. In order to protect your Personal Information, we have implemented adequate technology and will update these measures as new technology becomes available, as appropriate. All Personal Information is securely stored on a secure cloud setup and all communication happens via bank-grade secure SSL communication channels. The Personal Information is stored on Google cloud. Although we provide appropriate firewalls and protections, we cannot warrant the security of any Personal Information transmitted as our systems are not hack proof. Data pilferage due to unauthorized hacking, virus attacks, technical issues is possible and we take no liabilities or responsibilities for it.<br />
+                                You are responsible for all actions that take place under your User Account. If you choose to share your User Account details and password or any Personal Information with third parties, you are solely responsible for the same. If you lose control of your User Account, you may lose substantial control over your Personal Information and may be subject to legally binding actions.<br />
+                                No data collected and allowed to be stored by us shall be stored in any server which is not located in India.</p>
+                                
+                                <p>ACCESSING AND MODIFYING PERSONAL INFORMATION<br />
+                                In case you need to access, review, revoke and/or make changes to the Personal Information, you shall have to login to your User Account and change the requisite details. You shall keep your Personal Information updated to help us better serve you.</p>
+                                
+                                <p>ANCILLIARY SERVICES<br />
+                                We may provide you with certain ancillary services such as chat rooms, blogs and reviews for the Services. Subject to any applicable laws, any communication shared by you via the Platform or through the blogs, reviews or otherwise to us (including without limitation contents, images, audio, financial information, feedback etc. collectively Feedback) is on a non-confidential basis, and we are under no obligation to refrain from reproducing, publishing or otherwise using it in any way or for any purpose. You shall be responsible for the content and information contained in any Feedback shared by you through the Platform or otherwise to us, including without limitation for its truthfulness and accuracy. Sharing your Feedback with us, constitutes an assignment to us of all worldwide rights, titles and interests in all copyrights and other intellectual property rights in the Feedback and you authorize us to use the Feedback for any purpose, which we may deem fit.</p>
+                                
+                                <p>COMMUNICATIONS FROM THE PLATFORM<br />
+                                Special Offers and Updates: We may send you information on products, services, special deals, and a newsletter of the Company. Out of respect for your privacy, we present you with the option of not receiving these types of communications. You may unsubscribe via the unsubscribe mechanism provided in each such communication or by emailing us at team@moneyrise.in<br />
+                                Service Announcements: On certain occasions or under law, we are required to send out Service or Platform related announcements. We respect your privacy, however you may not opt-out of these communications. These communications would not be promotional in nature.<br />
+                                Customer Service: We communicate with Customer(s) on a regular basis to provide requested services and in regards to issues relating to their User Account, we reply via email or phone, based on Customer(s) requirements and convenience</p>
+                                
+                                <p>INDEMNIFICATION<br />
+                                You agree to indemnify us, our subsidiaries, affiliates, officers, agents, co-branders or other partners, and employees and hold us harmless from and against any claims and demand, including reasonable attorneys fees, made by any third party arising out of or relating to: (i) Personal Information and contents that you submit or share through the Platform; (ii) your violation of this Privacy Policy, (iii) or your violation of rights of another Customer(s).</p>
+                                
+                                <p>LIMITATIONS OF LIABILITY<br />
+                                You expressly understand and agree that the Company shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, information, details or other intangible losses (even if the Company has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the Services; (ii) unauthorized access to or alteration of your Personal Information.</p>
+                                
+                                <p>GOVERNING LAWS AND DUTIES<br />
+                                You expressly understand and agree that the Company, including its directors, officers, employees, representatives or the service provider, shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if the Company has been advised of the possibility of such damages), resulting from; (a) use or the inability to avail the Services (b) inability to use the Platform (c) failure or delay in providing the Services or access to the Platform (d) any performance or non-performance by the Company (e) any damages to or viruses that may infect your electronic devices or other property as the result of your access to the Platform or your downloading of any content from the Platform and (f) server failure or otherwise or in any way relating to the Services.</p>
+                                
+                                <p>FORCE MAJEURE<br />
+                                This Agreement shall be construed and governed by the laws of India and courts of law at Delhi shall have exclusive jurisdiction over such disputes without regard to principles of conflict of laws.</p>
+                                
+                                <p>CHANGES TO THIS POLICY<br />
+                                We may update this Privacy Policy without notice to you. You are encouraged to check this Privacy Policy on a regular basis to be aware of the changes made to it. Continued use of the Services and access to the Platform shall be deemed to be your acceptance of this Privacy Policy.</p>
+                                
+                                <p>CONTACT US<br />
+                                If you have questions, concerns or grievances regarding this Privacy Policy or any concerns regarding Data Security and Privacy, you can reach out to our Principal Officer Mr. Ujjawal Mishra at email-address: team@moneyrise.in<br />
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+        
+                    
+                </div>
+                <div class="row" style="margin-top: 2em; padding-left: 2em;">
+                <h1 class="pb-2 text-center" >Contact Us</h1> <br/><br/><br/>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 info">
+                                <i class="bx bx-map"></i>
+                                <h4>Address</h4>
+                                <p>B1/632, 2nd Floor, Janakpuri<br>New Delhi - 110058</p>
+                            </div>
+                            <div class="col-lg-6 info">
+                                <i class="bx bx-phone"></i>
+                                <h4>Call Us</h4>
+                                <p>+91-971-1871-780</p>
+                            </div>
+                      <div class="col-lg-6 info">
+                        <i class="bx bx-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>team@moneyrise.in<br>bd@moneyrise.in</p>
+                      </div>
+                      <div class="col-lg-6 info">
+                        <i class="bx bx-time-five"></i>
+                        <h4>Working Hours</h4>
+                        <p>Mon - Sat: 9AM to 6PM</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-6">
+                    <div data-tf-widget="MeWtAVAv" data-tf-iframe-props="title=Moneyrise contact" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                  </div>
+                    
+                  </div>
+              
+              <footer id="footer" class="footer mt-auto py-3 bg-light">
+
+                <div class="footer-top">
+                  <div class="container">
+                    <div class="row">
+            
+                      <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Moneyrise India</h3>
+                        <p>
+                          B1/632, 2nd Floor, Janakpuri <br>
+                          New Delhi - 110058<br>
+                          India <br><br>
+                          <strong>Phone:</strong> +91-971-1871-780<br>
+                          <strong>Email:</strong> team@moneyrise.in<br>
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                          <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="tnc.html">Terms of service</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="grievances.html">Grievance Redressal</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="experian_tnc.html">Experian T&C</a></li>
+                          </ul>
+                        </div>
+            
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Partners</h4>
+                        <ul>
+                          <li><h1></h1><i class="bx bx-chevron-right"></i> <a href="#">Microsoft Startup</a></h1></li>
+                          <li><h1></h1><i class="bx bx-chevron-right"></i> <a href="#">Amazon Startup</a></h1></li>
+                          <li><h1></h1><i class="bx bx-chevron-right"></i> <a href="#">Experian</a></h1></li>
+                          <li><h1></h1><i class="bx bx-chevron-right"></i> <a href="#">MSME Startup By GOI</a></h1></li>
+                          <li><h1></h1><i class="bx bx-chevron-right"></i> <a href="#">Startup India</a></h1></li>
+                        </ul>
+                        
+                      </div>
+            
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <div class="social-links mt-3">
+                          <a href="https://www.linkedin.com/company/moneyrise/" class="linkedin" target="_blank"><h1><i class="bx bxl-linkedin"></i></h1></a>
+                        </div>
+                      </div>
+            
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="container py-4 text-center">
+                  <div class="copyright">
+                    &copy; Copyright 2022-2023<strong> <span>Moneyrise</span></strong>. All Rights Reserved
+                  </div>
+                  <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
+                    Made with <span style="color: red;"> &hearts; </span>	in  India
+                  </div>
+                </div>
+              </footer>
 
         </div>
-      </div>
-    </div>
 
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+        
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    </body>
 </html>
